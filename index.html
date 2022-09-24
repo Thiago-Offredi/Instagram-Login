@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Instagram</title>
+</head>
+
+<body>
+    <div class="container-celular">
+        <img src="imagens/celular.png" class="celular">
+        <img src="imagens/insta1.png" class="img-celular">
+        <img src="imagens/insta2.png" class="img-celular" id="mudar-imagem">
+
+    </div>
+    <div class="container">
+        <div class="container-forms">
+            <img src="imagens/insta-logo.png" class="insta-logo">
+            <input class=".inputt" placeholder="Telefone, nome de usuário ou e-mail">
+            <input placeholder="senha">
+            <button>Entrar</button>
+            <a class="login-facebook" href="https://pt-br.facebook.com/">Entrar com o facebook</a>
+            <a class="esqueceu-senha"
+                href="https://pt-br.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0">Esqueceu
+                a
+                senha?</a>
+        </div>
+        <div class="container-cadastro">
+            <p class="paragrafo-conta">Não tem uma conta?</p>
+            <a class="link">Cadastre-se</a>
+        </div>
+        <p class="paragrafo-app">Obtenha o aplicativo</p>
+        <div class="container-app">
+
+            <img src="imagens/ios.png" class="logo-app">
+            <img src="imagens/google.png" class="logo-app">
+        </div>
+    </div>
+</body>
+<script>
+    let imagem = document.getElementById("mudar-imagem")
+
+
+    function trocaImagem() {
+        if (imagem.style.opacity == 0) {
+            imagem.style.opacity = 1
+        } else {
+            imagem.style.opacity = 0
+        }
+
+    }
+    setInterval(function () {
+        trocaImagem()
+    }, 3000)
+
+
+
+</script>
+
+</html>
